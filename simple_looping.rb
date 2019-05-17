@@ -7,23 +7,37 @@ def loop_iterator(number_of_times)
   # How can we make sure the loop breaks once it has puts out the phrase the 
   #   correct number of times?
   # Maybe we should keep count of the number of times we've puts out the 
-  #  phrase and break when the counter hits the appropriate number...
-  phrase = "Welcome to Flatiron School's Web Development Course!"
+  #  phrase and break when the counter hits the appropriate number
   
-end
+  number_of_times = 0
+  loop do
+    number_of_times += 1
+  puts "Welcome to Flatiron School's Web Development Course!"
+  if number_of_times >= 7
+      break
+    end
+  end
+end 
+
 
 def times_iterator(number_of_times)
   # code your solution here using the "times" keyword
-  phrase = "Welcome to Flatiron School's Web Development Course!"
-  
+  # phrase = "Welcome to Flatiron School's Web Development Course!"
+  7.times do
+  puts "Welcome to Flatiron School's Web Development Course!"
+  end
 end
+
 
 def while_iterator(number_of_times)
   # code your solution here using the "while" keyword
   # hint: user a counter to tell the while loop when to stop!
-  phrase = "Welcome to Flatiron School's Web Development Course!"
-  
+  begin
+  puts "Welcome to Flatiron School's Web Development Course!"
+end while number_of_times >= 7
 end
+
+
 
 def until_iterator(number_of_times)
   # code your solution here using the "until" keyword
@@ -31,6 +45,7 @@ def until_iterator(number_of_times)
   phrase = "Welcome to Flatiron School's Web Development Course!"
 
 end
+
 
 def for_iterator(number_of_times)
   # code your solution here using the "for" keyword
